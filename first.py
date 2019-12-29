@@ -11,6 +11,7 @@ chrome_options.add_argument("--disable-popup-blocking")
 chrome_options.add_argument("--allow-popups-during-page-unload")
 chrome_options.add_argument("--disable-background-timer-throttling")
 chrome_options.add_argument("--disable-local-storage")
+chrome_options.add_argument('--user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
 driver.get("https://x1erangel.blogspot.com/")
