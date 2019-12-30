@@ -18,7 +18,7 @@ driver.get("https://x1erangel.blogspot.com/")
 driver.find_element_by_link_text("First Post").click()
 time.sleep(5)
 driver.find_element_by_link_text("link").click()
-time.sleep(600)
+time.sleep(900)
 
 driver.quit()
 
