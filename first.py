@@ -16,12 +16,12 @@ chrome_options.add_argument(f'user-agent={useragent}')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
 driver.get("https://x1erangel.blogspot.com/")
-
+print("Opened the website")
 driver.find_element_by_link_text("First Post").click()
 time.sleep(5)
 driver.find_element_by_link_text("link").click()
-time.sleep(900)
-
+time.sleep(1700)
+print("Waiting...')
 driver.quit()
 
 print("Done !")
