@@ -5,3 +5,4 @@ itsdangerous==1.1.0
 selenium==3.141.0
 urllib3==1.25.7
 Werkzeug==0.16.0
+fake-useragent==0.1.11
