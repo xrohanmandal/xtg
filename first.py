@@ -2,7 +2,7 @@ from selenium import webdriver
 import os
 import time
 
-userAgent = Mozilla/5.0 (X11; Linux i586; rv:31.0) Gecko/20100101 Firefox/71.0
+useragent = "Mozilla/5.0 (X11; Linux i586; rv:31.0) Gecko/20100101 Firefox/71.0"
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
@@ -12,7 +12,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-popup-blocking")
 chrome_options.add_argument("--allow-popups-during-page-unload")
 chrome_options.add_argument("--disable-background-timer-throttling")
-chrome_options.add_argument(f'user-agent={userAgent}')
+chrome_options.add_argument(f'user-agent={useragent}')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
 driver.get("https://x1erangel.blogspot.com/")
