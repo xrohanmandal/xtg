@@ -1,13 +1,11 @@
 from selenium import webdriver
-from fake_useragent import UserAgent
 import os
 import time
 
+userAgent = Mozilla/5.0 (X11; Linux i586; rv:31.0) Gecko/20100101 Firefox/71.0
+
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-ua = UserAgent()
-userAgent = ua.random
-print(userAgent)
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
