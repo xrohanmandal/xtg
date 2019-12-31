@@ -14,7 +14,6 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-popup-blocking")
 chrome_options.add_argument("--allow-popups-during-page-unload")
 chrome_options.add_argument("--disable-background-timer-throttling")
-chrome_options.add_argument("--disable-local-storage")
 chrome_options.add_argument(f'user-agent={userAgent}')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
